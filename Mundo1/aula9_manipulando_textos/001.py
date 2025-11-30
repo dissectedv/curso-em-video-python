@@ -1,0 +1,22 @@
+# aula de formatacao de texto
+frase = 'Curso em video Python'
+
+print(frase)
+print(frase[0])
+print(frase[3])
+print(frase[3:13])
+print(frase[:13])
+print(frase[13:])
+print(frase[1:15])
+print(frase[1:15:2])
+print(frase[::2])
+print(frase.upper())
+print(frase.lower())
+print(frase.capitalize())
+print(frase.split())
+print(frase.splitlines())
+print(frase.strip())
+print(frase.count('a'))
+print(frase.find('a'))
+print(frase.upper().count('O'))
+print(frase.replace('Python', 'Android'))
