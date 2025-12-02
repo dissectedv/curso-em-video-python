@@ -1,18 +1,20 @@
 # verifica ano de nascimento e verifica a categoria na natacao
 from datetime import date
 
-adn = int(input('Digite o seu ano de nascimento: '))
+ano_nascimento = int(input('Digite o seu ano de nascimento: '))
 
-atu = date.today().year
-idade = atu - adn
+ano_atual = date.today().year
+idade = ano_atual - ano_nascimento
+
+print(f'Quem nasceu em {ano_nascimento} tem {idade} anos de idade.')
 
 if idade <= 9:
-    print('Mirim.')
+    print('Classificacao: Mirim.')
 elif idade <= 14:
-    print('Infantil.')
+    print('Classificacao: Infantil.')
 elif idade <= 19:
-    print('Junior.')
-elif idade <= 20:
-    print('Senior.')
+    print('Classificacao: Junior.')
+elif idade <= 25:
+    print('Classificacao: Senior.')
 else:
-    print('Master')
+    print('Classificacao: Master.')

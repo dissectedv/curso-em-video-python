@@ -1,8 +1,8 @@
 # calculadora de imc
-p = float(input('Informe seu peso: '))
-a = float(input('Informe sua altura: '))
+peso = float(input('Informe seu peso: '))
+altura = float(input('Informe sua altura: '))
 
-imc = p / (a * a)
+imc = peso / (altura * altura)
 
 if imc < 18.5:
     print('Abaixo do peso')

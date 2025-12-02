@@ -5,18 +5,18 @@ print("\033[35m-=-"*15)
 print('Analisador de Triangulo')
 print('-=-'*15)
 
-r1 = float(input('Digite o valor da primeira reta: '))
-r2 = float(input('Digite o valor da segunda reta: '))
-r3 = float(input('Digite o valor da terceira reta: '))
+reta_1 = float(input('Digite o valor da primeira reta: '))
+reta_2 = float(input('Digite o valor da segunda reta: '))
+reta_3 = float(input('Digite o valor da terceira reta: '))
 print('\033[35mTRINGULANDO...')
 sleep(1)
 
-t = r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2
+triangulo = reta_1 < reta_2 + reta_3 and reta_2 < reta_1 + reta_3 and reta_3 < reta_1 + reta_2
 
-if t:
-    if r1 != r2 and r3 != r1 and r2 != r3:
+if triangulo:
+    if reta_1 != reta_2 and reta_3 != reta_1 and reta_2 != reta_3:
         print('O triangulo eh: Escaleno!')
-    elif r1 == r2 == r3:
+    elif reta_1 == reta_2 == reta_3:
         print('O triangulo eh: Equilátero')
     else:
         print('O triangulo eh: Isósceles')
